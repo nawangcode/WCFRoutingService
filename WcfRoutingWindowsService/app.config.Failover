@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <system.serviceModel>
+    <services>
+      <!--ROUTING SERVICE -->
+      <service behaviorConfiguration="MyRoutingConfiguration"
+               name="System.ServiceModel.Routing.RoutingService">
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:9000/CustomerService/"/>
+          </baseAddresses>
+        </host>
+        <!-- Define the service endpoints that are receive messages -->
+        <endpoint address=""
+                  binding="basicHttpBinding"
+                  contract="System.ServiceModel.Routing.IRequestReplyRouter"/>
+
+      </service>
+    </services>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="MyRoutingConfiguration">
+          <!-- Add the RoutingBehavior and specify the Routing Table to use -->
+          <routing filterTableName="MyFilterTable"/>
+          <serviceMetadata httpGetEnabled="True"/>
+          <serviceDebug includeExceptionDetailInFaults="False" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_IService" closeTimeout="00:01:00"
+            openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00"
+            allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard"
+            maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536"
+            messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered"
+            useDefaultWebProxy="true">
+          <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384"
+              maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+          <security mode="None">
+            <transport clientCredentialType="None" proxyCredentialType="None"
+                realm="" />
+            <message clientCredentialType="UserName" algorithmSuite="Default" />
+          </security>
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <!-- Define the client endpoint(s) to route messages to -->
+      <endpoint address="http://localhost:50281/WCFService/Service.svc"
+          binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService"
+          contract="*" name="BasicHttpBinding_IService" />
+      <endpoint address="http://localhost:50518/WCFService2/Service.svc"
+          binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService"
+          contract="*" name="BasicHttpBinding_IService2" />
+      
+    </client>
+    <!--ROUTING SECTION -->
+    <routing>
+      <filters>
+        <filter name="AllRequests" filterType="MatchAll"/>
+      </filters>
+      <filterTables>
+        <filterTable name="MyFilterTable">
+          <add filterName="AllRequests" endpointName="BasicHttpBinding_IService" backupList="BackUps" />
+        </filterTable>
+      </filterTables>
+      <backupLists>
+        <backupList name="BackUps">
+          <add endpointName="BasicHttpBinding_IService2"/>
+        </backupList>
+      </backupLists>
+    </routing>
+  </system.serviceModel>
+</configuration>

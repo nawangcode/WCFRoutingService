@@ -1,0 +1,12 @@
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\WcfRoutingWindowsService\bin\Debug\WcfRoutingWindowsService.exe
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\WcfRoutingWindowsService\bin\Debug\WcfRoutingWindowsService.pdb
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\WcfRoutingWindowsService\obj\x86\Debug\WcfRoutingWindowsService.exe
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\WcfRoutingWindowsService\obj\x86\Debug\WcfRoutingWindowsService.pdb
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\WcfRoutingWindowsService\bin\Debug\WcfRoutingWindowsService.exe.config
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\WcfRoutingWindowsService\obj\x86\Debug\WcfRoutingWindowsService.csprojResolveAssemblyReference.cache
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\WcfRoutingWindowsService\bin\Debug\WcfRoutingWindowsService.exe.config
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\WcfRoutingWindowsService\bin\Debug\WcfRoutingWindowsService.exe
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\WcfRoutingWindowsService\bin\Debug\WcfRoutingWindowsService.pdb
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\WcfRoutingWindowsService\obj\x86\Debug\WcfRoutingWindowsService.csprojResolveAssemblyReference.cache
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\WcfRoutingWindowsService\obj\x86\Debug\WcfRoutingWindowsService.exe
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\WcfRoutingWindowsService\obj\x86\Debug\WcfRoutingWindowsService.pdb

@@ -1,0 +1,12 @@
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\DemoClient\bin\Debug\DemoClient.exe.config
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\DemoClient\bin\Debug\DemoClient.exe
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\DemoClient\bin\Debug\DemoClient.pdb
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\DemoClient\obj\x86\Debug\DemoClient.exe
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\DemoClient\obj\x86\Debug\DemoClient.pdb
+C:\Users\NaW\Documents\Visual Studio 2010\Projects\WCFService\DemoClient\obj\x86\Debug\DemoClient.csprojResolveAssemblyReference.cache
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\DemoClient\bin\Debug\DemoClient.exe.config
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\DemoClient\bin\Debug\DemoClient.exe
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\DemoClient\bin\Debug\DemoClient.pdb
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\DemoClient\obj\x86\Debug\DemoClient.csprojResolveAssemblyReference.cache
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\DemoClient\obj\x86\Debug\DemoClient.exe
+C:\Users\naw\Documents\Visual Studio 2015\Projects\WCFService\DemoClient\obj\x86\Debug\DemoClient.pdb
